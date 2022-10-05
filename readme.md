@@ -1,3 +1,3 @@
 # Atividade
 
-Trabalho feito por Manuela e Pedro Lucca, IA20.
+Alunos: Manuela e Pedro Lucca, IA20.
