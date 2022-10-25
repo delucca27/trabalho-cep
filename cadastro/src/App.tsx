@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import "./css/App.css"
 
 import TabDadosDeEndereco from './pages/TabDadosDeEndereco'
 import LoginPage from "./pages/LoginPage"
-import "./css/App.css"
+import CadastroPage from "./pages/CadastroPage"
+import UserPage from "./pages/UserPage"
 
 export default function () {
 
@@ -11,6 +13,8 @@ export default function () {
       <Routes>
         <Route index element={ <TabDadosDeEndereco /> } />
         <Route path="/login" element={ <LoginPage /> } />
+        <Route path="/cadastro" element={ <CadastroPage /> } />
+        <Route path="/u" element={ <UserPage /> } />
       </Routes>
     </BrowserRouter>
   </>
