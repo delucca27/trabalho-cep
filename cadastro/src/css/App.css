@@ -5,7 +5,7 @@
    box-sizing: border-box;
 }
 
-h1, h2, h3, p, input
+*
 {
    font-family: "Almarai", sans-serif;
    color: #070707;
@@ -121,4 +121,28 @@ header
 .resultados > p {
    margin: 22px;
    padding: 0;
+}
+
+
+form.cadastro-form
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+form.cadastro-form button, form.login-form button
+{
+   width: 60%;
+   height: 52px;
+
+   background-color: #ffb20d;
+   border-radius: 8px;
+
+   font-size: 22px;
+   font-weight: 600;
+   border: none;
+
+   margin-top: 15px;
+   cursor: pointer;
 }
