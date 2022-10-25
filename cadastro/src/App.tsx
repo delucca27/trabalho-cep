@@ -1,10 +1,17 @@
-// import 'https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
 import TabDadosDeEndereco from './pages/TabDadosDeEndereco'
+import LoginPage from "./pages/LoginPage"
 import "./css/App.css"
 
 export default function () {
 
   return <>
-    <TabDadosDeEndereco />
+    <BrowserRouter>
+      <Routes>
+        <Route index element={ <TabDadosDeEndereco /> } />
+        <Route path="/login" element={ <LoginPage /> } />
+      </Routes>
+    </BrowserRouter>
   </>
 }
